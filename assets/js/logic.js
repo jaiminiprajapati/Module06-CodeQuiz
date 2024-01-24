@@ -96,3 +96,11 @@ function showFeedback(message){
     feedback.classList.remove('hide');
     feedbackElement.innerText = message;
 }
+
+// Add event listener to the submit button to save user initials and score, and redirect to highscores page
+submitButton.addEventListener("click", function(){
+    const userInitial = document.getElementById("initials").value;
+    localStorage.setItem("initial", userInitial);
+    localStorage.setItem("score", score);
+    location.href = "./highscores.html"
+})
