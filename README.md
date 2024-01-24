@@ -6,7 +6,7 @@
 Welcome to the Code Quiz, an engaging and interactive application designed to test and enhance your coding knowledge. This feature-rich quiz includes a dynamic timer, carefully crafted multiple-choice questions, and an intuitive user interface for an immersive experience.
 
 ## Link to the deployed application
-()
+(https://jaiminiprajapati.github.io/Module06-CodeQuiz/)
 
 ## 📸 Screenshort
 ![Start quiz image](./assets/images/01startQuiz.png)
