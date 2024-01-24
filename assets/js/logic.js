@@ -71,3 +71,14 @@ function checkAnswer(index){
         endQuiz();
     }
 }
+
+// Function to start the timer
+function startTimer(){
+    timer = setInterval(function(){
+        if (time <= 0){
+            endQuiz();
+        } else{
+            timerElement.textContent = time--;
+        }
+    },1000);
+}
