@@ -103,4 +103,4 @@ submitButton.addEventListener("click", function(){
     localStorage.setItem("initial", userInitial);
     localStorage.setItem("score", score);
     location.href = "./highscores.html"
-})
+});
