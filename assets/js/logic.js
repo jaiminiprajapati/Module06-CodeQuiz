@@ -30,3 +30,21 @@ function startQuiz(){
     showQuestion(currentQuestionIndex);
     startTimer();
 }
+
+// Function to display a question
+function showQuestion(index){
+    const currentQuestion = questions[index];
+    questionsTitle.innerText = currentQuestion.question;
+    choicesContainer.innerHTML = '';
+
+    // Create buttons for answer choices
+    currentQuestion.options.forEach((option, i) => {
+        const button = document.createElement("button");
+        button.innerText = option;
+        button.classList.add("choice-btn");
+        button.addEventListener("click", function(event){
+            checkAnswer(i);
+        });
+        choicesContainer.appendChild(button);
+    });
+}
