@@ -90,3 +90,9 @@ function endQuiz(){
     endScreen.classList.remove("hide");
     finalScore.innerText = score;
 }
+
+// Function to show feedback after each question
+function showFeedback(message){
+    feedback.classList.remove('hide');
+    feedbackElement.innerText = message;
+}
