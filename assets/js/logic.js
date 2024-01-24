@@ -88,6 +88,7 @@ function endQuiz(){
     clearInterval(timer);
     questionsContainer.classList.add("hide");
     endScreen.classList.remove("hide");
+    showFeedback("");
     finalScore.innerText = score;
 }
 
