@@ -82,3 +82,11 @@ function startTimer(){
         }
     },1000);
 }
+
+// Function to end the quiz
+function endQuiz(){
+    clearInterval(timer);
+    questionsContainer.classList.add("hide");
+    endScreen.classList.remove("hide");
+    finalScore.innerText = score;
+}
