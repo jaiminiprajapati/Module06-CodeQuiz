@@ -48,3 +48,26 @@ function showQuestion(index){
         choicesContainer.appendChild(button);
     });
 }
+
+// Function to check the selected answer
+function checkAnswer(index){
+    const currentQuestion = questions[currentQuestionIndex];
+    if (currentQuestion.options[index] === currentQuestion.correctAnswer){
+        score++;
+        correctSound.play();
+        showFeedback("Correct!");
+    } else {
+        time-=10;
+        timerElement.textContent = time;
+        incorrectSound.play();
+        showFeedback("Wrong Answer");
+    }
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < questions.length){
+        showQuestion(currentQuestionIndex);
+    } else {
+        endQuiz();
+    }
+}
