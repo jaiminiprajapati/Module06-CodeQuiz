@@ -66,6 +66,13 @@ li:nth-child(odd) {
   text-align: center;
 }
 
+.start img{
+  height: 400px;
+  width: 400px;
+  align-items: center;
+  opacity: 0.9;
+}
+
 .scores {
   position: absolute;
   top: 10px;
